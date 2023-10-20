@@ -14,9 +14,11 @@ export class TLDCallClass {
 	}
 
 	async getData(domain: string) {
+		console.log("==>getting data");
 		return await this.TLDContract.getDomainData(domain);
 	}
 	async getDomain(address: string) {
+		console.log("==>getting Domaine Data");
 		return await this.TLDContract.defaultNames(address);
 	}
 }
