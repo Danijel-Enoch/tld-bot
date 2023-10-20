@@ -1,0 +1,47 @@
+{
+	"name": "gravy-stack",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon bot.ts",
+		"build": "npx tsc",
+		"start": "node dist/bot.js",
+		"prod": "bun run build && bun run start",
+		"generate-types": "bunx typechain --target ethers-v6 --out-dir src/types/contracts 'src/web3/abis/*.json'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@1inch/limit-order-protocol": "^2.0.4",
+		"@grammyjs/conversations": "^1.1.2",
+		"@grammyjs/i18n": "^1.0.1",
+		"@grammyjs/menu": "^1.2.1",
+		"@grammyjs/router": "^2.0.0",
+		"@grammyjs/runner": "^2.0.3",
+		"@supabase/supabase-js": "^2.33.2",
+		"axios": "^1.5.0",
+		"dotenv": "^16.3.1",
+		"ethers": "^6.7.1",
+		"grammy": "^1.17.2",
+		"graphql": "^16.8.1",
+		"graphql-request": "^6.1.0",
+		"isomorphic-fetch": "^3.0.0",
+		"node-fetch": "^3.3.2",
+		"ts-node": "^10.9.1",
+		"ts-node-dev": "^2.0.0",
+		"typechain": "^8.3.1",
+		"typescript": "^5.2.2"
+	},
+	"devDependencies": {
+		"@typechain/ethers-v6": "^0.5.1",
+		"@types/node": "^20.4.7",
+		"nodemon": "^3.0.1",
+		"tsc-node": "0.0.3"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
+}
