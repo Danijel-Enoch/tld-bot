@@ -1,7 +1,7 @@
 import { request, gql, GraphQLClient } from "graphql-request";
 
 const graphQLClient = new GraphQLClient(
-	"https://api.studio.thegraph.com/query/51321/ens-goerli-api/1.2"
+	"https://api.studio.thegraph.com/proxy/51321/ens-mainnet-bot/1.2/"
 );
 
 const singleUserQuery = () => gql`

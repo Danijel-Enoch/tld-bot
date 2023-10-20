@@ -1,8 +1,8 @@
 import { ethers } from "ethers";
 import { FlexiPunkTLD, FlexiPunkTLD__factory } from "../types/contracts";
 
-const contractAddress = "0xc2db399ba81304556bfc0b563892032434f5ab53";
-const rpc = "https://goerli.infura.io/v3/4823ee0845bb40b18e00f11ba7ac1b8b";
+const contractAddress = "0x5d608c48EFE54a19dfb3c77d78863587f797eFAE";
+const rpc = "https://mainnet.infura.io/v3/4823ee0845bb40b18e00f11ba7ac1b8b";
 export class TLDCallClass {
 	TLDContract: FlexiPunkTLD;
 	constructor(contractAddress: string, rpc: string) {
